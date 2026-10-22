@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using System.Configuration;
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -16,20 +17,27 @@ namespace G26W08WPFCounter
     /// </summary>
     public partial class MainWindow : Window
     {
+        protected int count = 0;
         public MainWindow()
         {
             InitializeComponent();
+            TxtCount.Text = "0";
         }
 
         private void OnAdd(object sender, RoutedEventArgs e)
         {
             //BtnAdd.Content = "눌렸습니다";
-            TxtCount.Text = "눌렸습니다.";
+            TxtCount.Text = $"{++count}";
         }
 
         private void TxtCount_TextChanged(object sender, TextChangedEventArgs e)
         {
 
+        }
+
+        private void OnSub(object sender, RoutedEventArgs e)
+        {
+            TxtCount.Text = $"{--count}";
         }
     }
 }

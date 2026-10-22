@@ -11,7 +11,8 @@
             <ImageBrush Stretch="UniformToFill" ImageSource="/Images/diego-jimenez-A-NVHPka9Rk-unsplash.jpg"/>
         </Grid.Background>
         <Button x:Name="BtnAdd" Content="증가" HorizontalAlignment="Center" Height="36" Margin="0,143,0,0" VerticalAlignment="Top" Width="362" FontSize="24" Click="OnAdd"/>
-        <TextBox x:Name="TxtCount" HorizontalAlignment="Center" Height="74" Margin="0,33,0,0" TextWrapping="Wrap" Text="안녕하세요" VerticalAlignment="Top" Width="362" TextAlignment="Center" FontSize="48" TextChanged="TxtCount_TextChanged" Background="#FFEFF304"/>
+        <TextBox x:Name="TxtCount" HorizontalAlignment="Center" Height="74" Margin="0,33,0,0" TextWrapping="Wrap" Text="counter" VerticalAlignment="Top" Width="362" TextAlignment="Center" FontSize="48" TextChanged="TxtCount_TextChanged" Background="#FFEFF304"/>
+        <Button Content="감소" HorizontalAlignment="Center" Height="39" Margin="0,202,0,0" VerticalAlignment="Top" Width="362" FontSize="24" Click="OnSub"/>
 
     </Grid>
 </Window>
